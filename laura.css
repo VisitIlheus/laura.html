@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #93b874;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.L-side1 {
+    display: flex;
+    align-items: center;
+}
+
+.left-icon2 {
+    width: 50px;
+}
+
+.center-side {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 44px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    height: 50px;
+    background-color: #B3CE9C;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.search-bar::placeholder {
+    color: white;
+}
+
+.search-icon {
+    background-color: #B3CE9C;
+    border: none;
+    margin-left: -1px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.conteudo-principal {
+    background-color: white;
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.6;
+    margin-bottom: 40px; /* Espaço entre o conteúdo principal e o card-01 */
+}
+
+.topic {
+    font-size: 15px;
+    color: #307530;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 26px;
+    padding-top: 12.675px;
+    padding-bottom: 8.90px;
+}
+
+.title {
+    padding-left: 26px;
+    padding-top: 12.675px;
+    padding-bottom: 8.90px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.autor {
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 26px;
+    padding-top: 12.675px;
+    padding-bottom: 8.90px;
+    color: #545454;
+    font-size: 17px;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.pdf {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    align-items: center;
+    float: right;
+    margin: -5px 10px 5px 5px;
+    padding: .45em 1.1rem;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+.pdf:hover {
+    background-color: #e0e0e0;
+}
+
+.pdf-icon {
+    width: 30px;
+    margin: 0;
+}
+
+.text-pdf {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.intro {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    padding-left: 26px;
+    padding-top: 12.675px;
+    padding-bottom: 8.90px;
+    color: #545454;
+}
+
+.card-01 {
+    background-color: white;
+    width: 100%;
+    max-width: 1280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .conteudo-principal, .card-01 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+.card-01:hover {
+    transform: translateY(-5px); /* Levanta o card levemente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+/* Estilo para os passos */
+.passo {
+    display: flex;
+    align-items: center; /* Alinha o número e o texto na mesma linha */
+    background-color: #F0F4EB;
+    height: 80px;
+    
+    
+    
+    /* Espaço entre o passo e a descrição */
+}
+
+.numero {
+    background-color: #93b874; /* Cor de fundo verde (igual ao header) */
+    color: white; /* Cor do texto */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-right: 15px; /* Espaço entre o número e o texto */
+}
+
+.texto-passo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+.descricao-passo {
+    font-size: 24px;
+    color: #545454;
+    line-height: 1.6;
+    margin-top: 10px; /* Espaço entre o título e a descrição */
+}
+.imagem-passo {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
+}
+@media(min-width: 1000px ){
+    .conteudo-principal{
+        width: 80%;
+    }
+    .card-01{
+        margin: 0 auto 40px; /* Espaço abaixo do card-01 */
+        padding: 20px;
+        width: 80%;
+    }
+    .passo{
+        margin-bottom: 10px;
+    }
+}
